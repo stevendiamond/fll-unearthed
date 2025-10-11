@@ -18,16 +18,20 @@ attach = Motor(Port.A)
 
 sensor = ColorSensor(Port.E)
 roro = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
-roro.settings(straight_speed=450)
+roro.settings(straight_speed=600)
 roro.use_gyro(True)
 roro.drive(300, 0)
 while sensor.reflection() > 20:
     print(sensor.reflection())
     wait(10)
-roro.straight(-60)
+roro.straight(-30)
 roro.arc(-150, 50)
 roro.turn(50)
-roro.straight(120)
-for i in range(20):
-    roro.straight(30)
-    roro.straight(-30)
+roro.straight(-80)
+for i in range(2):
+    roro.straight(-110)
+    roro.straight(110)
+roro.arc(50, 90)
+roro.arc(-80, 100)
+roro.straight(750)
+    
