@@ -18,6 +18,7 @@ attach = Motor(Port.A)
 
 robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
 robot.use_gyro(True)
+robot.settings(straight_speed=600)
 robot.straight(710)
 robot.straight(-10)
 robot.turn(-45) #this is when it hits the opsticle

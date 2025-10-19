@@ -18,7 +18,7 @@ attach = Motor(Port.A)
 
 robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
 robot.use_gyro(True)
-robot.settings(300)
+robot.settings(450)
 robot.straight(758)
 robot.arc(-150,90)
 robot.straight(100)
