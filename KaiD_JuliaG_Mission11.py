@@ -22,13 +22,12 @@ roro.settings(straight_speed=600)
 roro.use_gyro(True)
 roro.drive(300, 0)
 while sensor.reflection() > 20:
-    print(sensor.reflection())
     wait(10)
 roro.straight(-30)
 roro.arc(-150, 50)
 roro.turn(50)
 roro.straight(-80)
-for i in range(2):
+for i in range(3):
     roro.straight(-110)
     roro.straight(110)
 roro.arc(50, 90)
