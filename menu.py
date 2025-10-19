@@ -36,3 +36,5 @@ elif selected == "7":
     import KaiD_JuliaG_Missions12
 elif selected == "8":
     import KaiC_Nikias
+elif selected == "a":
+    import acrossTheMap
