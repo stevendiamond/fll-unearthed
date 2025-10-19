@@ -54,10 +54,8 @@ attach.run_until_stalled(-10000, duty_limit=30)
 robot.straight(140)
 robot.turn(165)
 robot.straight(50)
-attach.run_angle(10000,400)
-attach.run_angle(1000,-120)
-robot.turn(-45)
-robot.straight(500)
+attach.run_angle(10000,500)
+
 
 
 
