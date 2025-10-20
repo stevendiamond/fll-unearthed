@@ -6,4 +6,4 @@ from pybricks.tools import wait, StopWatch
 
 def Go(robot, attach):
     robot.use_gyro(True)
-    robot.straight(100)
+    robot.straight(500)
