@@ -4,7 +4,7 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
-def run6(roro, attach):
+def run5(roro, attach):
     roro.settings(straight_speed=450)
     roro.use_gyro(True)
 

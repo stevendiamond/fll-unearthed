@@ -4,7 +4,7 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
-def run4(a, attach):
+def run(a, attach):
     a.use_gyro(True)
     attach.control.limits(2000,20000,1000)
     attach.run_until_stalled(2000,duty_limit=30)

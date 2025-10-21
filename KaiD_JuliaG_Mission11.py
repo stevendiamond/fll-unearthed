@@ -4,7 +4,7 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
-def run5(roro, attach):
+def run4(roro, attach):
     sensor = ColorSensor(Port.E) #tod: make sensor part of function
     roro.settings(straight_speed=600)
     roro.use_gyro(True)

@@ -6,7 +6,7 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
-def run8(robot, attach):
+def run7(robot, attach):
     robot.use_gyro(True)
 
     print(robot.settings())
