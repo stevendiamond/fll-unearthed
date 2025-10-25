@@ -12,6 +12,7 @@ def run6(roro, attach):
     roro.straight(250)
     attach.run_until_stalled(-450,duty_limit=40)
     roro.straight(-200)
+    roro.straight(40)
     attach.run_until_stalled(450,duty_limit=40)
     roro.straight(-500)
     wait(3000)
