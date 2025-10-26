@@ -14,10 +14,10 @@ def run4(roro, attach):
     roro.straight(-30)
     roro.arc(-150, 50)
     roro.turn(50)
-    roro.straight(-70)
+    roro.straight(-80)
     for i in range(3):
-        roro.straight(-120)
-        roro.straight(120)
+        roro.straight(-110)
+        roro.straight(110)
     roro.arc(50, 90)
     roro.arc(-80, 100)
     roro.straight(750)
