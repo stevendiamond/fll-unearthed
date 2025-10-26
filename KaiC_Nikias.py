@@ -6,64 +6,45 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
-#hub = PrimeHub()
-#hub.display.orientation(Side.BOTTOM)
-#rightMotor = Motor(Port.C)
-#leftMotor = Motor(Port.D, Direction.COUNTERCLOCKWISE)
-#attach = Motor(Port.A)
-#robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
+# hub = PrimeHub()
+# hub.display.orientation(Side.BOTTOM)
+# rightMotor = Motor(Port.C)
+# leftMotor = Motor(Port.D, Direction.COUNTERCLOCKWISE)
+# attach = Motor(Port.A)
+# robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
 
 def run7(robot, attach):
-    robot.use_gyro(True)
+robot.use_gyro(True)
 
-    print(robot.settings())
-    attach.run_until_stalled(10000,duty_limit=40)
-    attach.control.limits(2000,20000,1000)
-    robot.settings(straight_speed=450)
-    robot.straight(500)
-    robot.arc(200,90)
-    robot.straight(150)
-    robot.turn(-90)
-    robot.straight(-45)
-    attach.run_until_stalled(-20000, duty_limit=40)
-    robot.straight(30)
+#print(robot.settings())
+attach.run_until_stalled(20000,duty_limit=60)
+attach.control.limits(2000,20000,1000)
+robot.settings(straight_speed=450)
+robot.straight(500)
+robot.arc(200,90)
+robot.straight(150)
+robot.turn(-90)
+robot.straight(-45)
+attach.run_until_stalled(-20000, duty_limit=80)
+robot.straight(30)
 
-    attach.run_angle(10000,375) #minecart
-    attach.dc(100)
-    wait(500)
-    attach.stop()
-    attach.run_angle(1000,500)
-    robot.turn(50)
-    robot.straight(240)
-    robot.turn(90)
-    attach.run_until_stalled(10000,duty_limit=40)
-    attach.run_angle(10000,-270)
-    robot.straight(370)
-    robot.turn(-370)
-    robot.straight(-15)
-    attach.run_until_stalled(-10000, duty_limit=40)
-    robot.arc(400,90)    
-    #robot.straight(140)
-    #robot.turn(165)
-    robot.straight(50)
-    attach.run_angle(10000,500)
-
-
-
-
-
-    #robot.straight(300)      
-    #robot.straight(160)
-    #robot.turn(-123)
-    #robot.straight (28)
-    #attach.run_until_stalled(-1000, duty_limit=50)
-    #robot.straight(-100)
-
-
-    #attach.run_angle(2000,-550)
-
-
-
-    #for i in range(4):
-    #    robot.straight(500)
-    #    robot.turn(90)
+attach.run_angle(10000,375) #minecart
+attach.dc(100)
+wait(500)
+attach.stop()
+attach.run_angle(202000,500)
+robot.turn(50)
+robot.straight(240)
+robot.turn(90)
+attach.run_until_stalled(10000,duty_limit=60)
+attach.run_angle(10000,-300)
+robot.straight(370)
+robot.turn(-370)
+robot.straight(-15)
+attach.run_until_stalled(-10000, duty_limit=60)
+#robot.arc(400,90)    
+robot.straight(140)
+robot.turn(165)
+robot.straight(50)
+robot.straight(-20)
+attach.run_angle(10000,500)
