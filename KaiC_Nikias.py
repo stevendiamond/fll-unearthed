@@ -6,12 +6,12 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
-# hub = PrimeHub()
-# hub.display.orientation(Side.BOTTOM)
-# rightMotor = Motor(Port.C)
-# leftMotor = Motor(Port.D, Direction.COUNTERCLOCKWISE)
-# attach = Motor(Port.A)
-# robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
+    # hub = PrimeHub()
+    # hub.display.orientation(Side.BOTTOM)
+    # rightMotor = Motor(Port.C)
+    # leftMotor = Motor(Port.D, Direction.COUNTERCLOCKWISE)
+    # attach = Motor(Port.A)
+    # robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
 
 def run7(robot, attach):
     robot.use_gyro(True)
@@ -28,9 +28,9 @@ def run7(robot, attach):
     attach.run_until_stalled(-20000, duty_limit=80)
     robot.straight(30)
 
-    attach.run_angle(10000,375) #minecart
-    attach.dc(100)
-    wait(500)
+    attach.run_angle(10000,275) #minecart
+    #attach.dc(100)
+    wait(1000)
     attach.stop()
     attach.run_angle(202000,500)
     robot.turn(50)
