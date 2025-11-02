@@ -18,7 +18,7 @@ from pybricks.tools import wait, StopWatch
 def run1(robot, attach):
     robot.use_gyro(True)
     robot.settings(300)
-    robot.straight(550)
+    robot.straight(590)
     robot.arc(-330,90)
     robot.straight(230)
     robot.turn(-135)
@@ -30,10 +30,10 @@ def run1(robot, attach):
     robot.turn(90)
     robot.straight(100)#this is where we used too end
     robot.turn(-20)
-    robot.straight(170)
+    robot.straight(160)
     robot.turn(65)
     robot.settings(200)
-    robot.straight(205)
+    robot.straight(205) # this is where we hit the small 10 pointer
     robot.settings(500)
     robot.turn(-75)
     robot.straight(350)
