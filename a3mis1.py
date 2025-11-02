@@ -31,11 +31,10 @@ def run1(robot, attach):
     robot.straight(100)#this is where we used too end
     robot.turn(-20)
     robot.straight(170)
-    robot.turn(70)
+    robot.turn(65)
     robot.settings(200)
-    robot.straight(200)
+    robot.straight(205)
     robot.settings(500)
-    robot.straight(-100)
     robot.turn(-75)
     robot.straight(350)
     #robot.turn(-20)
