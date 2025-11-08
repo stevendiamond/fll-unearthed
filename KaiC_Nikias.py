@@ -13,7 +13,7 @@ from pybricks.tools import wait, StopWatch
     # attach = Motor(Port.A)
     # robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
 
-def run7(robot, attach):
+def run6(robot, attach):
     robot.use_gyro(True)
 
     #print(robot.settings())

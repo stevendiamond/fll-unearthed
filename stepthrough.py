@@ -7,11 +7,10 @@ from a3mis1 import run1
 from awasdeleted2 import run2
 from asideone3 import run3
 from KaiD_JuliaG_Mission11 import run4
-from KaiD_JuliaG_Missions_1_and_2 import run5
-from KaiD_JuliaG_Mission12 import run6
-from KaiC_Nikias import run7
+from KaiD_JuliaG_Mission12 import run5
+from KaiC_Nikias import run6
 
-codes = [run1, run2, run3, run4, run5, run6, run7]
+codes = [run1, run2, run3, run4, run5, run6]
 
 hub = PrimeHub()
 hub.display.orientation(Side.BOTTOM)
