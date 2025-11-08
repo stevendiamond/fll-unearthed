@@ -21,8 +21,6 @@ def run4(roro:DriveBase, attach):
         roro.straight(-160)
         roro.straight(160)
     roro.straight(10)
-    roro.turn(30)
-    roro.turn(-30)
     roro.straight(-150)
     roro.turn(90)
     roro.arc(-200, 120)
