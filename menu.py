@@ -8,10 +8,9 @@ from a3mis1 import run1
 from awasdeleted2 import run2
 from asideone3 import run3
 from ahelpwith4 import run4
-from KaiD_JuliaG_Mission11 import run5
-from KaiD_JuliaG_Missions_1_and_2 import run6
-from KaiD_JuliaG_Mission12 import run7
-from KaiC_Nikias import run8
+from KaiD_JuliaG_Missions_1_and_2 import run5
+from KaiD_JuliaG_Mission12 import run6
+from KaiC_Nikias import run7
 from acrossTheMap import runa
 
 hub = PrimeHub()
