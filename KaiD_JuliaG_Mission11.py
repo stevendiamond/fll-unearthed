@@ -6,19 +6,25 @@ from pybricks.tools import wait, StopWatch
 
 def run4(roro:DriveBase, attach):
     sensor = ColorSensor(Port.E) #tod: make sensor part of function
-    roro.settings(straight_speed=600)
+    roro.settings(600)
     roro.use_gyro(True)
+    roro.straight(800)
     roro.drive(300, 0)
     while sensor.reflection() > 20:
         wait(10)
-    roro.straight(10)
-    roro.arc(-50, 50)
-    roro.arc(50, 50)
-    roro.straight(-70)
+    roro.straight(-10)
+    roro.arc(10, 90)
+    roro.straight(-90)
+    roro.arc(10, -90)
+    roro.straight(20)
     for i in range(3):
-        roro.straight(-150)
-        roro.straight(150)
-    roro.arc(50, 90)
-    roro.arc(-80, 100)
-    roro.straight(750)
+        roro.straight(-160)
+        roro.straight(160)
+    roro.straight(10)
+    roro.turn(30)
+    roro.turn(-30)
+    roro.straight(-150)
+    roro.turn(90)
+    roro.arc(-200, 120)
+    roro.straight(1000)
         
