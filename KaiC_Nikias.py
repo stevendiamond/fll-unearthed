@@ -26,7 +26,7 @@ def run6(robot, attach):
     robot.turn(-90)
     robot.straight(-45)
     attach.run_until_stalled(-20000, duty_limit=80)
-    robot.straight(30)
+    robot.straight(40)
 
     attach.run_angle(10000,275) #minecart
     #attach.dc(100)
@@ -37,10 +37,10 @@ def run6(robot, attach):
     robot.straight(240)
     robot.turn(90)
     attach.run_until_stalled(10000,duty_limit=60)
-    attach.run_angle(10000,-300)
+    attach.run_angle(1000,-340) #(-340 works most of the time for sorbet) this may need to be -360 or -370 for roro
     robot.straight(370)
     robot.turn(-370)
-    robot.straight(-15)
+    #robot.straight(-15)
     attach.run_until_stalled(-10000, duty_limit=60)
     #robot.arc(400,90)    
     robot.straight(140)
