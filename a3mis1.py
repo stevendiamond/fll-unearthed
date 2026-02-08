@@ -24,8 +24,13 @@ def run1(robot, attach):
     robot.turn(-135)
     robot.straight(330) #we hit the pushy thingy
     robot.straight(-100)
-    robot.turn(-55)    
-    robot.straight(500) #we will go forward to hit number 6 the bolders
+    robot.turn(-35)
+    robot.straight(300)
+    robot.turn(-45)
+    robot.straight(90)
+    robot.turn(60) #we hit the boulders
+    
+
     robot.straight(-60)
     robot.turn(90)
     robot.straight(100)#this is where we used too end
