@@ -16,9 +16,10 @@ def run4(roro:DriveBase, attach):
     roro.arc(10, 90)
     roro.straight(-90)
     roro.arc(10, -90)
+    roro.straight(170)
     for i in range(3):
-        roro.straight(-160)
-        roro.straight(160)
+        roro.straight(-200)
+        roro.straight(200)
     roro.straight(-130)
     roro.turn(90)
     roro.arc(-200, 120)
