@@ -40,10 +40,10 @@ def run7(robot, attach):
     attach.run_angle(1000,-340) #(-340 works most of the time for sorbet) this may need to be -360 or -370 for roro
     robot.straight(370)
     robot.turn(-370)
-    #robot.straight(-15)
+    robot.straight(18)
     attach.run_until_stalled(-10000, duty_limit=60)
-    #robot.arc(400,90)    
-    robot.straight(140)
+    robot.arc(400,90)    
+    #robot.straight(140)
     robot.turn(165)
     robot.straight(50)
     robot.straight(-20)
