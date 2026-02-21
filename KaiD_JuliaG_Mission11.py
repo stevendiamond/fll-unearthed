@@ -12,16 +12,16 @@ def run4(roro:DriveBase, attach):
     roro.drive(300, 0)
     while sensor.reflection() > 20:
         wait(10)
-    roro.straight(-10)
+    roro.straight(30)
     roro.arc(10, 90)
-    roro.straight(-90)
+    roro.straight(-150)
     roro.arc(10, -90)
     roro.straight(170)
     for i in range(3):
-        roro.straight(-200)
+        roro.straight(-170)
         roro.straight(200)
     roro.straight(-130)
     roro.turn(90)
-    roro.arc(-200, 120)
+    roro.arc(-170, 120)
     roro.straight(1000)
         
