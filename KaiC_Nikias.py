@@ -45,9 +45,10 @@ def run7(robot: DriveBase, attach):
     robot.turn(100)
     robot.straight(-60)
     attach.run_angle(1000,-90)
-    robot.straight(120)
+    robot.straight(130)
     attach.run_angle(1000,100)
-    robot.turn(30)
+    robot.turn(40)
+    robot.turn(-30)
     robot.straight(-100)
 
     #robot.turn(-370)
