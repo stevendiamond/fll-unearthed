@@ -35,7 +35,7 @@ def run7(robot: DriveBase, attach):
     #go backwardss because it gets stuck becasue of robot.drive
     robot.turn(50)
     robot.straight(200)
-    robot.turn(90)
+    robot.turn(70)
     attach.run_until_stalled(10000,duty_limit=60)
     attach.run_angle(1000,-310) 
     robot.straight(370)
@@ -45,10 +45,10 @@ def run7(robot: DriveBase, attach):
     robot.turn(100)
     robot.straight(-60)
     attach.run_angle(1000,-90)
-    robot.straight(70)
+    robot.straight(120)
     attach.run_angle(1000,100)
     robot.turn(30)
-    robot.straight(-40)
+    robot.straight(-100)
 
     #robot.turn(-370)
     # robot.straight(18)
