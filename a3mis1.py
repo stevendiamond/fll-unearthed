@@ -24,6 +24,9 @@ def run1(robot, attach):
     robot.turn(-135)
     robot.straight(330) #we hit the pushy thingy
     robot.straight(-100)
+
+
+
     robot.turn(-35)
     robot.straight(300)
     robot.turn(-45)
@@ -31,17 +34,40 @@ def run1(robot, attach):
     robot.turn(60) #we hit the boulders
     
 
-    robot.straight(-60)
-    robot.turn(90)
-    robot.straight(100)#this is where we used too end
-    robot.turn(-20)
-    robot.straight(160)
+    
+    robot.straight(-10)
+    robot.turn(60)
+    robot.straight(-67)
+    robot.turn(-95) 
+    robot.straight(-60) #we hit the other complicated one
+    robot.straight(50)
+    robot.straight(-20)
+    robot.turn(80)
+    robot.straight(300)
     robot.turn(65)
     robot.settings(200)
-    robot.straight(205) # this is where we hit the small 10 pointer
-    robot.settings(500)
-    robot.turn(-75)
-    robot.straight(350)
+    robot.straight(150)
+    wait(1000)
+    robot.straight(-200)
+    robot.settings(400)
+    robot.turn(-80)
+    robot.straight(500)
+
+
+    #robot.turn(30)
+    #robot.straight(-120)
+
+
+    #robot.turn(90)
+    #robot.straight(100)#this is where we used too end
+    #robot.turn(-20)
+    #robot.straight(160)
+    #robot.turn(65)
+    #robot.settings(200)
+    #robot.straight(205) # this is where we hit the small 10 pointer
+    #robot.settings(500)
+    #robot.turn(-75)
+    #robot.straight(350)
     #robot.turn(-20)
 #    robot.straight(600) brings it all the way home
 
