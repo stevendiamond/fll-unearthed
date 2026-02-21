@@ -13,7 +13,7 @@ from pybricks.tools import wait, StopWatch
     # attach = Motor(Port.A)
     # robot = DriveBase(leftMotor, rightMotor, wheel_diameter = 55.6, axle_track = 80)
 
-def run7(robot, attach):
+def run7(robot: DriveBase, attach):
     robot.use_gyro(True)
 
     #print(robot.settings())
@@ -24,27 +24,38 @@ def run7(robot, attach):
     robot.arc(200,90)
     robot.straight(150)
     robot.turn(-90)
-    robot.straight(-45)
-    attach.run_until_stalled(-20000, duty_limit=80)
-    robot.straight(40)
-
-    attach.run_angle(10000,275) #minecart
-    #attach.dc(100)
+    robot.straight(-60)
+    attach.run_until_stalled(-20000, duty_limit=60)
+    robot.straight(50)
+    robot.drive(-20, 0)
+    attach.run_angle(10000,200) #minecart
+    robot.stop()
     wait(1000)
-    attach.stop()
-    attach.run_angle(202000,500)
+    attach.run_angle(20000,150) #release from minecart mission 
+    #go backwardss because it gets stuck becasue of robot.drive
     robot.turn(50)
-    robot.straight(240)
+    robot.straight(200)
     robot.turn(90)
     attach.run_until_stalled(10000,duty_limit=60)
-    attach.run_angle(1000,-340) #(-340 works most of the time for sorbet) this may need to be -360 or -370 for roro
+    attach.run_angle(1000,-310) 
     robot.straight(370)
-    robot.turn(-370)
-    robot.straight(18)
-    attach.run_until_stalled(-10000, duty_limit=60)
-    robot.arc(400,90)    
-    #robot.straight(140)
-    robot.turn(165)
-    robot.straight(50)
-    robot.straight(-20)
-    attach.run_angle(10000,500)
+
+    robot.turn(-280) #transition into statue rebuild
+    robot.straight(275)
+    robot.turn(100)
+    robot.straight(-60)
+    attach.run_angle(1000,-90)
+    robot.straight(70)
+    attach.run_angle(1000,100)
+    robot.turn(30)
+    robot.straight(-40)
+
+    #robot.turn(-370)
+    # robot.straight(18)
+    # attach.run_until_stalled(-10000, duty_limit=60)
+    # robot.arc(400,90)    
+    # #robot.straight(140)
+    # robot.turn(165)
+    # robot.straight(50)
+    # robot.straight(-20)
+    # attach.run_angle(10000,500)
